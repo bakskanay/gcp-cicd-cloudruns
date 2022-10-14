@@ -5,7 +5,7 @@
 
 FROM ubuntu:21.10
 
-
+RUN apt-get -y update
 RUN apt-get -y install apache2
 
 RUN echo 'Docker Image on CloudRun of Denis Astahov!<br>'   > /var/www/html/index.html
